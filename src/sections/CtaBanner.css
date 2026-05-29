@@ -1,0 +1,72 @@
+.cta-banner {
+  padding: 0 0 6rem;
+  background: var(--fb-off-white);
+}
+
+.cta-banner__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 3rem 3.5rem;
+  background: linear-gradient(135deg, var(--fb-green-dark) 0%, var(--fb-green) 50%, var(--fb-green-light) 100%);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-green);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-banner__inner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 90% 50%, rgba(255, 255, 255, 0.12) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.cta-banner__text {
+  position: relative;
+  z-index: 1;
+  color: var(--fb-white);
+  max-width: 560px;
+}
+
+.cta-banner__text h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.cta-banner__text p {
+  font-size: 1rem;
+  opacity: 0.9;
+  line-height: 1.65;
+}
+
+.cta-banner__btn {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  background: var(--fb-white) !important;
+  color: var(--fb-green-dark) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+.cta-banner__btn:hover {
+  background: var(--fb-off-white) !important;
+  box-shadow: var(--shadow-lg) !important;
+}
+
+@media (max-width: 768px) {
+  .cta-banner__inner {
+    flex-direction: column;
+    text-align: center;
+    padding: 2.5rem 2rem;
+  }
+
+  .cta-banner__btn {
+    width: 100%;
+  }
+}

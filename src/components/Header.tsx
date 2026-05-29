@@ -4,9 +4,10 @@ import { logoUrl } from '../config/assets';
 
 const navLinks = [
   { href: '#inicio', label: 'Inicio' },
+  { href: '#beneficios', label: 'Beneficios' },
   { href: '#producto', label: 'Producto' },
   { href: '#funcionalidades', label: 'Funcionalidades' },
-  { href: '#proceso', label: 'Proceso' },
+  { href: '#sectores', label: 'Sectores' },
   { href: '#contacto', label: 'Contacto' },
 ];
 
@@ -15,7 +16,7 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
+    const onScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
@@ -47,7 +48,7 @@ export default function Header() {
             ))}
           </ul>
           <a href="#contacto" className="btn btn-primary header__cta" onClick={closeMenu}>
-            Solicitar demo
+            Demo gratuita
           </a>
         </nav>
 

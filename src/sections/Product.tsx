@@ -1,40 +1,56 @@
-import './Product.css';
+import ScrollReveal from '../components/ScrollReveal';
 import { logoUrl } from '../config/assets';
+import { IconCheck } from '../components/Icons';
+import './Product.css';
+
+const highlights = [
+  'Compatible con balanza LR22 vía RS232',
+  'Funciona sin conexión a internet',
+  'Recibos con su marca Fabio Balanzas',
+  'Licencias Standard y Premium',
+];
 
 export default function Product() {
   return (
     <section id="producto" className="product">
-      <div className="container product__grid">
-        <div className="product__image-wrap">
-          <img src={logoUrl} alt="Fabio Balanzas" className="product__logo" />
-          <div className="product__badge">FBApp v1</div>
-        </div>
-        <div className="product__content">
+      <div className="container product__layout">
+        <ScrollReveal className="product__visual">
+          <div className="product__logo-frame">
+            <div className="product__logo-glow" aria-hidden="true" />
+            <img src={logoUrl} alt="Fabio Balanzas" className="product__logo" />
+            <div className="product__version">FBApp · v1</div>
+          </div>
+          <div className="product__chip-row">
+            <span className="product__chip">Windows 10+</span>
+            <span className="product__chip">.NET 8</span>
+            <span className="product__chip">SQLite cifrado</span>
+          </div>
+        </ScrollReveal>
+
+        <ScrollReveal className="product__content" delay={150}>
           <span className="section-label">El producto</span>
-          <h2 className="section-title">FBApp — Gestión integral de balanza LR22</h2>
+          <h2 className="section-title">
+            El software que su balanza LR22 necesitaba
+          </h2>
           <p className="section-subtitle">
-            Aplicación de escritorio para Windows que centraliza todo el flujo de pesaje
-            industrial: desde la lectura del indicador hasta el recibo y el reporte.
+            FBApp es la aplicación de escritorio desarrollada por Fabio Balanzas que unifica
+            pesaje, clientes, tarifas y documentación en una sola pantalla. Diseñada para
+            operadores de planta, no para informáticos.
           </p>
-          <ul className="product__list">
-            <li>
-              <strong>Comunicación RS232</strong>
-              <span>Lectura continua con protocolo EL05 y detección de peso estable.</span>
-            </li>
-            <li>
-              <strong>Operación offline</strong>
-              <span>Base de datos SQLite cifrada con SQLCipher para uso sin conexión.</span>
-            </li>
-            <li>
-              <strong>Identificación rápida</strong>
-              <span>Clientes por búsqueda o tarjeta RFID con saldo prepago.</span>
-            </li>
-            <li>
-              <strong>Documentación automática</strong>
-              <span>Recibos PDF, envío por email y reportes de pesajes.</span>
-            </li>
+
+          <ul className="product__highlights">
+            {highlights.map((item) => (
+              <li key={item}>
+                <IconCheck />
+                {item}
+              </li>
+            ))}
           </ul>
-        </div>
+
+          <a href="#contacto" className="btn btn-primary">
+            Quiero una demo
+          </a>
+        </ScrollReveal>
       </div>
     </section>
   );
