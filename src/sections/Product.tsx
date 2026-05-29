@@ -5,7 +5,7 @@ import './Product.css';
 
 const highlights = [
   'Compatible con balanza LR22 vía RS232',
-  'Funciona sin conexión a internet',
+  'Pesaje y registro local sin depender de la nube',
   'Recibos con su marca Fabio Balanzas',
   'Licencias Standard y Premium',
 ];

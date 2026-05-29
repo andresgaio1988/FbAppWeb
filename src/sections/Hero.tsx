@@ -94,11 +94,11 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="hero__float hero__float--offline">
+          <div className="hero__float hero__float--secure">
             <span className="hero__float-icon">🔒</span>
             <div>
-              <strong>100% offline</strong>
-              <p>Datos cifrados</p>
+              <strong>Datos en planta</strong>
+              <p>Base local cifrada</p>
             </div>
           </div>
         </div>

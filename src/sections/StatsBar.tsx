@@ -4,7 +4,7 @@ import './StatsBar.css';
 const stats = [
   { value: 'RS232', label: 'Conexión nativa LR22', sub: 'Protocolo EL05' },
   { value: '2', label: 'Etapas de pesaje', sub: 'Inicial y final' },
-  { value: '100%', label: 'Operación offline', sub: 'Sin depender de internet' },
+  { value: 'Local', label: 'Datos en su planta', sub: 'Pesaje sin depender de la nube' },
   { value: '0', label: 'Papeles perdidos', sub: 'Todo queda registrado' },
 ];
 

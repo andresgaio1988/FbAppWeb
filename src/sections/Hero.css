@@ -305,7 +305,7 @@
   animation-delay: -1s;
 }
 
-.hero__float--offline {
+.hero__float--secure {
   top: 2rem;
   right: -1.25rem;
   animation-delay: -2.5s;
@@ -345,7 +345,7 @@
     bottom: -0.75rem;
   }
 
-  .hero__float--offline {
+  .hero__float--secure {
     right: 0;
     top: -0.5rem;
   }
