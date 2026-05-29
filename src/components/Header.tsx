@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './Header.css';
+import { logoUrl } from '../config/assets';
 
 const navLinks = [
   { href: '#inicio', label: 'Inicio' },
@@ -32,7 +33,7 @@ export default function Header() {
     <header className={`header ${scrolled ? 'header--scrolled' : ''}`}>
       <div className="container header__inner">
         <a href="#inicio" className="header__brand" onClick={closeMenu}>
-          <img src="/LogoFBAPP.jpeg" alt="Fabio Balanzas" className="header__logo" />
+          <img src={logoUrl} alt="Fabio Balanzas" className="header__logo" />
         </a>
 
         <nav className={`header__nav ${menuOpen ? 'header__nav--open' : ''}`} aria-label="Principal">

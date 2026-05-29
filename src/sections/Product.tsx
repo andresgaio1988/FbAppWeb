@@ -1,11 +1,12 @@
 import './Product.css';
+import { logoUrl } from '../config/assets';
 
 export default function Product() {
   return (
     <section id="producto" className="product">
       <div className="container product__grid">
         <div className="product__image-wrap">
-          <img src="/LogoFBAPP.jpeg" alt="Fabio Balanzas" className="product__logo" />
+          <img src={logoUrl} alt="Fabio Balanzas" className="product__logo" />
           <div className="product__badge">FBApp v1</div>
         </div>
         <div className="product__content">

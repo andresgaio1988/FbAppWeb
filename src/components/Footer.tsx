@@ -1,4 +1,5 @@
 import './Footer.css';
+import { logoUrl } from '../config/assets';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -7,7 +8,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer__inner">
         <div className="footer__brand">
-          <img src="/LogoFBAPP.jpeg" alt="Fabio Balanzas" className="footer__logo" />
+          <img src={logoUrl} alt="Fabio Balanzas" className="footer__logo" />
           <p>Sistema de gestión de pesajes industriales para balanza LR22.</p>
         </div>
 
