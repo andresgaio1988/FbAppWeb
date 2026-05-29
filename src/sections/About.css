@@ -1,0 +1,55 @@
+.about {
+  padding: 6rem 0;
+  background: var(--fb-white);
+}
+
+.about__layout {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about__visual {
+  display: flex;
+  justify-content: center;
+}
+
+.about__logo {
+  width: 100%;
+  max-width: 380px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.about__placeholder {
+  margin-top: 1.5rem;
+  padding: 2rem;
+  background: var(--fb-green-muted);
+  border-radius: var(--radius-lg);
+  border: 1px dashed rgba(107, 165, 57, 0.4);
+}
+
+.about__placeholder p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--fb-gray);
+}
+
+.about__hint {
+  margin-top: 0.75rem;
+  font-size: 0.9rem !important;
+  color: var(--fb-gray-light) !important;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .about__layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about__visual {
+    order: -1;
+  }
+}

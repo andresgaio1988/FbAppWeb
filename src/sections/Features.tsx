@@ -24,7 +24,7 @@ const features = [
   {
     title: 'Recibos y reportes',
     description:
-      'PDF con logo Fabio Balanzas, impresión directa, envío por email y reportes de pesajes exportables para contabilidad.',
+      'Generación de recibos, impresión directa, envío por email y reportes de pesajes exportables para contabilidad.',
     tag: 'Docs',
   },
   {

@@ -26,6 +26,8 @@ export default function Footer() {
           <nav className="footer__col" aria-label="Más información">
             <strong>Más</strong>
             <a href="#sectores">Sectores</a>
+            <a href="#licencias">Licencias</a>
+            <a href="#quienes-somos">Quiénes somos</a>
             <a href="#proceso">Proceso</a>
             <a href="#contacto">Contacto</a>
           </nav>

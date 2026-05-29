@@ -8,6 +8,8 @@ const navLinks = [
   { href: '#producto', label: 'Producto' },
   { href: '#funcionalidades', label: 'Funcionalidades' },
   { href: '#sectores', label: 'Sectores' },
+  { href: '#licencias', label: 'Licencias' },
+  { href: '#quienes-somos', label: 'Quiénes somos' },
   { href: '#contacto', label: 'Contacto' },
 ];
 
