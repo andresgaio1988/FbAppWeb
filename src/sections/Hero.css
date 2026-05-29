@@ -1,0 +1,262 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  padding-top: calc(var(--header-height) + 3rem);
+  padding-bottom: 4rem;
+  overflow: hidden;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero__bg-green {
+  position: absolute;
+  inset: 0 0 42% 0;
+  background: linear-gradient(135deg, var(--fb-green) 0%, var(--fb-green-dark) 100%);
+}
+
+.hero__bg-gray {
+  position: absolute;
+  inset: 58% 0 0 0;
+  background: var(--fb-gray);
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  min-height: calc(100vh - var(--header-height) - 7rem);
+}
+
+.hero__text {
+  color: var(--fb-white);
+}
+
+.hero__badge {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin-bottom: 1.25rem;
+}
+
+.hero__title {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+}
+
+.hero__title span {
+  color: var(--fb-green-muted);
+}
+
+.hero__description {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  opacity: 0.92;
+  max-width: 52ch;
+  margin-bottom: 2rem;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero__stats dt {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 0.15rem;
+}
+
+.hero__stats dd {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.hero__visual {
+  position: relative;
+}
+
+.hero__card {
+  background: var(--fb-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  color: var(--fb-gray-dark);
+}
+
+.hero__card--main {
+  padding: 1.75rem;
+}
+
+.hero__card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--fb-gray-light);
+  margin-bottom: 1.5rem;
+}
+
+.hero__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.hero__dot--green {
+  background: var(--fb-green);
+  box-shadow: 0 0 0 3px var(--fb-green-muted);
+}
+
+.hero__weight {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero__weight-value {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 800;
+  color: var(--fb-green-dark);
+  font-variant-numeric: tabular-nums;
+}
+
+.hero__weight-unit {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--fb-gray-light);
+}
+
+.hero__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hero__status--stable {
+  background: var(--fb-green-muted);
+  color: var(--fb-green-dark);
+}
+
+.hero__status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--fb-green);
+}
+
+.hero__card-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #eee;
+}
+
+.hero__card-row small {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--fb-gray-light);
+  margin-bottom: 0.2rem;
+}
+
+.hero__card-row strong {
+  font-size: 0.9rem;
+}
+
+.hero__card--float {
+  position: absolute;
+  bottom: -1.5rem;
+  left: -1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 1rem 1.25rem;
+  max-width: 260px;
+}
+
+.hero__float-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--fb-green);
+  color: var(--fb-white);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.hero__card--float strong {
+  display: block;
+  font-size: 0.9rem;
+}
+
+.hero__card--float p {
+  font-size: 0.8rem;
+  color: var(--fb-gray-light);
+}
+
+@media (max-width: 900px) {
+  .hero__content {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .hero__visual {
+    order: -1;
+    max-width: 420px;
+    margin-inline: auto;
+  }
+
+  .hero__card--float {
+    left: auto;
+    right: 0;
+    bottom: -1rem;
+  }
+
+  .hero__stats {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero__bg-green {
+    inset: 0 0 55% 0;
+  }
+
+  .hero__bg-gray {
+    inset: 45% 0 0 0;
+  }
+}

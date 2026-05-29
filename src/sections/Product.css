@@ -1,0 +1,72 @@
+.product {
+  padding: 6rem 0;
+  background: var(--fb-off-white);
+}
+
+.product__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.product__image-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem;
+  background: var(--fb-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 3px solid var(--fb-green-muted);
+}
+
+.product__logo {
+  width: 100%;
+  max-width: 360px;
+  border-radius: var(--radius);
+}
+
+.product__badge {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  padding: 0.4rem 0.85rem;
+  background: var(--fb-green);
+  color: var(--fb-white);
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 999px;
+}
+
+.product__list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.product__list li {
+  padding-left: 1.25rem;
+  border-left: 3px solid var(--fb-green);
+}
+
+.product__list strong {
+  display: block;
+  font-size: 1rem;
+  color: var(--fb-gray-dark);
+  margin-bottom: 0.25rem;
+}
+
+.product__list span {
+  font-size: 0.925rem;
+  color: var(--fb-gray-light);
+}
+
+@media (max-width: 768px) {
+  .product__grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

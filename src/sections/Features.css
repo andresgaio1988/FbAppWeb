@@ -1,0 +1,71 @@
+.features {
+  padding: 6rem 0;
+  background: var(--fb-white);
+}
+
+.features__header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.features__header .section-subtitle {
+  margin-inline: auto;
+}
+
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.features__card {
+  padding: 2rem 1.75rem;
+  border-radius: var(--radius);
+  background: var(--fb-off-white);
+  border: 1px solid transparent;
+  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+
+.features__card:hover {
+  border-color: var(--fb-green-muted);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.features__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--fb-green);
+  color: var(--fb-white);
+  font-size: 1.35rem;
+  margin-bottom: 1.25rem;
+}
+
+.features__card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--fb-gray-dark);
+  margin-bottom: 0.6rem;
+}
+
+.features__card p {
+  font-size: 0.9rem;
+  color: var(--fb-gray-light);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .features__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .features__grid {
+    grid-template-columns: 1fr;
+  }
+}
