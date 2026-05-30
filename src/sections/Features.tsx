@@ -6,7 +6,7 @@ const features = [
   {
     title: 'Lectura en tiempo real',
     description:
-      'Conexión RS232 directa con la balanza LR22. Captura automática del peso estable con protocolo EL05 y simulador para pruebas.',
+      'Conexión RS232 directa con su balanza. Captura automática del peso estable con protocolo EL05 y simulador para pruebas.',
     tag: 'Core',
   },
   {

@@ -1,6 +1,6 @@
 # FbAppWeb — Sitio corporativo Fabio Balanzas
 
-SPA (Single Page Application) para **Fabio Balanzas**, empresa desarrolladora del sistema **FBApp** de gestión de pesajes con balanza LR22.
+SPA (Single Page Application) para **Fabio Balanzas**, empresa desarrolladora del sistema **FBApp** de gestión de pesajes industriales.
 
 ## Paleta de colores
 

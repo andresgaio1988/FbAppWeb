@@ -12,7 +12,7 @@ export default function CtaBanner() {
               <h2>¿Quiere ver FBApp en acción en su planta?</h2>
               <p>
                 Agende una demostración sin compromiso. Le mostramos el flujo completo
-                de pesaje con su balanza LR22.
+                de pesaje con su balanza.
               </p>
             </div>
             <a href="#contacto" className="btn btn-primary btn-lg cta-banner__btn">

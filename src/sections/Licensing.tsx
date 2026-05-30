@@ -3,7 +3,7 @@ import { IconCheck } from '../components/Icons';
 import './Licensing.css';
 
 const standardFeatures = [
-  'Lectura RS232 con balanza LR22',
+  'Lectura RS232 con balanza industrial',
   'Pesaje en dos etapas (inicial y final)',
   'Identificación manual de clientes',
   'Gestión de clientes, tarifas y usuarios',
