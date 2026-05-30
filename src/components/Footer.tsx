@@ -10,8 +10,8 @@ export default function Footer() {
         <div className="footer__brand">
           <img src={logoUrl} alt="Fabio Balanzas" className="footer__logo" />
           <p>
-            Software de gestión de pesajes industriales para su planta.
-            Desarrollado por Fabio Balanzas.
+            Instalación, calibración, reparación de balanzas y software FBApp
+            para gestión de pesajes industriales.
           </p>
         </div>
 
@@ -19,6 +19,7 @@ export default function Footer() {
           <nav className="footer__col" aria-label="Navegación">
             <strong>Navegación</strong>
             <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
             <a href="#beneficios">Beneficios</a>
             <a href="#producto">Producto</a>
             <a href="#funcionalidades">Funcionalidades</a>

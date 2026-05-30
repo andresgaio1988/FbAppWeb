@@ -2,6 +2,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Hero from './sections/Hero';
 import StatsBar from './sections/StatsBar';
+import Services from './sections/Services';
 import Benefits from './sections/Benefits';
 import Product from './sections/Product';
 import Features from './sections/Features';
@@ -19,6 +20,7 @@ export default function App() {
       <main>
         <Hero />
         <StatsBar />
+        <Services />
         <Benefits />
         <Product />
         <Features />

@@ -4,6 +4,7 @@ import { logoUrl } from '../config/assets';
 
 const navLinks = [
   { href: '#inicio', label: 'Inicio' },
+  { href: '#servicios', label: 'Servicios' },
   { href: '#beneficios', label: 'Beneficios' },
   { href: '#producto', label: 'Producto' },
   { href: '#funcionalidades', label: 'Funcionalidades' },

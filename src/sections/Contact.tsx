@@ -4,9 +4,9 @@ import { IconCheck } from '../components/Icons';
 import './Contact.css';
 
 const perks = [
-  'Demo personalizada para su operación',
-  'Instalación y configuración en planta',
-  'Capacitación para operadores',
+  'Instalación y calibración de balanzas',
+  'Reparaciones con servicio técnico local',
+  'Demo de FBApp para su operación',
   'Planes Standard y Premium disponibles',
 ];
 
