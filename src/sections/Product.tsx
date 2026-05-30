@@ -4,7 +4,7 @@ import { IconCheck } from '../components/Icons';
 import './Product.css';
 
 const highlights = [
-  'Compatible con balanza LR22 vía RS232',
+  'Compatible con balanza industrial vía RS232',
   'Pesaje y registro local sin depender de la nube',
   'Recibos con su marca Fabio Balanzas',
   'Licencias Standard y Premium',
@@ -30,7 +30,7 @@ export default function Product() {
         <ScrollReveal className="product__content" delay={150}>
           <span className="section-label">El producto</span>
           <h2 className="section-title">
-            El software que su balanza LR22 necesitaba
+            El software que su balanza necesitaba
           </h2>
           <p className="section-subtitle">
             FBApp es la aplicación de escritorio desarrollada por Fabio Balanzas que unifica

@@ -11,7 +11,7 @@ const steps = [
   {
     number: '02',
     title: 'Capturar peso',
-    description: 'FBApp lee la balanza LR22 en tiempo real y detecta cuándo el peso está estable.',
+    description: 'FBApp lee la balanza en tiempo real y detecta cuándo el peso está estable.',
     icon: '⚖️',
   },
   {

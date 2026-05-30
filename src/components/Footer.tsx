@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="footer__brand">
           <img src={logoUrl} alt="Fabio Balanzas" className="footer__logo" />
           <p>
-            Software de gestión de pesajes industriales para balanza LR22.
+            Software de gestión de pesajes industriales para su planta.
             Desarrollado por Fabio Balanzas.
           </p>
         </div>
@@ -34,7 +34,7 @@ export default function Footer() {
           <div className="footer__col">
             <strong>Producto</strong>
             <span>FBApp v1</span>
-            <span>Balanza LR22</span>
+            <span>Pesaje industrial</span>
             <span>Windows · .NET 8</span>
           </div>
         </div>

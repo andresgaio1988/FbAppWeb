@@ -26,7 +26,7 @@ export default function Contact() {
           <h2 className="section-title">Hablemos de su planta</h2>
           <p className="section-subtitle">
             Complete el formulario y un especialista de Fabio Balanzas se comunicará
-            con usted para coordinar una demostración de FBApp adaptada a su balanza LR22.
+            con usted para coordinar una demostración de FBApp adaptada a su su operación.
           </p>
 
           <ul className="contact__perks">
@@ -45,7 +45,7 @@ export default function Contact() {
             </div>
             <div>
               <strong>Producto</strong>
-              <span>FBApp — Sistema LR22</span>
+              <span>FBApp — Gestión de pesaje</span>
             </div>
           </div>
         </ScrollReveal>
@@ -85,7 +85,7 @@ export default function Contact() {
                     name="message"
                     rows={4}
                     required
-                    placeholder="Ej: tenemos 2 balanzas LR22, 50 clientes diarios, necesitamos recibos por email..."
+                    placeholder="Ej: tenemos 2 balanzas, 50 clientes diarios, necesitamos recibos por email..."
                   />
                 </div>
                 <button type="submit" className="btn btn-primary contact__submit">

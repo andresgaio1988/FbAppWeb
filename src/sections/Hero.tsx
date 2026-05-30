@@ -15,7 +15,7 @@ export default function Hero() {
         <div className="hero__text">
           <span className="hero__badge">
             <span className="hero__badge-dot" />
-            Software industrial · Balanza LR22
+            Software industrial · Gestión de pesaje
           </span>
 
           <h1 className="hero__title">
@@ -23,8 +23,66 @@ export default function Hero() {
             <span className="hero__title-accent"> Sin errores. Sin papeles.</span>
           </h1>
 
+          <div className="hero__visual">
+            <div className="hero__mockup">
+              <div className="hero__mockup-bar">
+                <span /><span /><span />
+                <p>FBApp — Panel de pesaje</p>
+              </div>
+
+              <div className="hero__mockup-body">
+                <div className="hero__weight-display">
+                  <span className="hero__weight-label">Peso en balanza</span>
+                  <div className="hero__weight-row">
+                    <span className="hero__weight-value">12.450,00</span>
+                    <span className="hero__weight-unit">kg</span>
+                  </div>
+                  <div className="hero__status">
+                    <span className="hero__status-pulse" />
+                    Estable · Listo para registrar
+                  </div>
+                </div>
+
+                <div className="hero__mockup-grid">
+                  <div className="hero__mockup-cell">
+                    <small>Cliente</small>
+                    <strong>Transportes del Sur</strong>
+                  </div>
+                  <div className="hero__mockup-cell">
+                    <small>Tarjeta RFID</small>
+                    <strong>●●●● 4821</strong>
+                  </div>
+                  <div className="hero__mockup-cell">
+                    <small>Etapa</small>
+                    <strong>Pesada final</strong>
+                  </div>
+                  <div className="hero__mockup-cell hero__mockup-cell--highlight">
+                    <small>Neto calculado</small>
+                    <strong>8.230,00 kg</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="hero__float hero__float--receipt">
+              <span className="hero__float-icon">📄</span>
+              <div>
+                <strong>Recibo PDF</strong>
+                <p>Enviado al cliente</p>
+              </div>
+            </div>
+
+            <div className="hero__float hero__float--secure">
+              <span className="hero__float-icon">🔒</span>
+              <div>
+                <strong>Datos en planta</strong>
+                <p>Base local cifrada</p>
+              </div>
+            </div>
+          </div>
+
           <p className="hero__description">
-            <strong>FBApp</strong> conecta su balanza LR22, identifica clientes al instante
+            <strong>FBApp</strong> conecta su balanza, identifica clientes al instante
             y genera recibos en segundos. Menos tiempo en planilla, más control en cada movimiento.
           </p>
 
@@ -43,64 +101,6 @@ export default function Hero() {
             <li>✓ Capacitación incluida</li>
             <li>✓ Soporte local</li>
           </ul>
-        </div>
-
-        <div className="hero__visual">
-          <div className="hero__mockup">
-            <div className="hero__mockup-bar">
-              <span /><span /><span />
-              <p>FBApp — Panel de pesaje</p>
-            </div>
-
-            <div className="hero__mockup-body">
-              <div className="hero__weight-display">
-                <span className="hero__weight-label">Peso en balanza</span>
-                <div className="hero__weight-row">
-                  <span className="hero__weight-value">12.450,00</span>
-                  <span className="hero__weight-unit">kg</span>
-                </div>
-                <div className="hero__status">
-                  <span className="hero__status-pulse" />
-                  Estable · Listo para registrar
-                </div>
-              </div>
-
-              <div className="hero__mockup-grid">
-                <div className="hero__mockup-cell">
-                  <small>Cliente</small>
-                  <strong>Transportes del Sur</strong>
-                </div>
-                <div className="hero__mockup-cell">
-                  <small>Tarjeta RFID</small>
-                  <strong>●●●● 4821</strong>
-                </div>
-                <div className="hero__mockup-cell">
-                  <small>Etapa</small>
-                  <strong>Pesada final</strong>
-                </div>
-                <div className="hero__mockup-cell hero__mockup-cell--highlight">
-                  <small>Neto calculado</small>
-                  <strong>8.230,00 kg</strong>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="hero__float hero__float--receipt">
-            <span className="hero__float-icon">📄</span>
-            <div>
-              <strong>Recibo PDF</strong>
-              <p>Enviado al cliente</p>
-            </div>
-          </div>
-
-          <div className="hero__float hero__float--secure">
-            <span className="hero__float-icon">🔒</span>
-            <div>
-              <strong>Datos en planta</strong>
-              <p>Base local cifrada</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
